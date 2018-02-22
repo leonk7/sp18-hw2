@@ -8,17 +8,17 @@ class Person
 
   def nickname
     # YOUR IMPLEMENTATION HERE
-    'delete_me'
+    @name[0,4]
   end
 
   def birth_year
     # YOUR IMPLEMENTATION HERE
-    1990
+    Time.now.year.to_i - age.to_i
   end
 
   def introduction
     # YOUR IMPLEMENTATION HERE
-    'delete_me'
+    "#{@name}, #{@age}"
   end
 
 end
